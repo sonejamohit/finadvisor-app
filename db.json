@@ -1,0 +1,10 @@
+{
+  "signup": [
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "123",
+      "id": 1
+    }
+  ]
+}
