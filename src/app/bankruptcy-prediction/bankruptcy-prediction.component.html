@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Bankruptcy Prediction Form</title>
+</head>
+
+<body>
+
+    <h1 id="title">Let's Predict Bankruptcy</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <main>
+        <form id="bankruptcy-form">
+            <fieldset id="features">
+                <label><span>Net Value Growth Rate:</span> <input type="number" id="netValueGrowthRate" name="netValueGrowthRate" [(ngModel)]="netValueGrowthRate" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Borrowing Dependency:</span> <input type="number" id="borrowingDependency" name="borrowingDependency" [(ngModel)]="borrowingDependency" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Net Income to Stockholder's Equity:</span> <input type="number" id="netIncomeToStockholdersEquity" name="netIncomeToStockholdersEquity" [(ngModel)]="netIncomeToStockholdersEquity" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Persistent EPS in the Last Four Seasons:</span> <input type="number" id="persistentEpsLastFourSeasons" name="persistentEpsLastFourSeasons" [(ngModel)]="persistentEpsLastFourSeasons" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Net profit before tax/Paid-in capital:</span> <input type="number" id="netProfitBeforeTaxPaidInCapital" name="netProfitBeforeTaxPaidInCapital" [(ngModel)]="netProfitBeforeTaxPaidInCapital" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Per Share Net profit before tax:</span> <input type="number" id="perShareNetProfitBeforeTax" name="perShareNetProfitBeforeTax" [(ngModel)]="perShareNetProfitBeforeTax" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Interest-bearing debt interest rate:</span> <input type="number" id="interestBearingDebtInterestRate" name="interestBearingDebtInterestRate" [(ngModel)]="interestBearingDebtInterestRate" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Degree of Financial Leverage (DFL):</span> <input type="number" id="degreeOfFinancialLeverage" name="degreeOfFinancialLeverage" [(ngModel)]="degreeOfFinancialLeverage" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Net Value Per Share:</span> <input type="number" id="netValuePerShare" name="netValuePerShare" [(ngModel)]="netValuePerShare" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>ROA before interest and depreciation before interest:</span> <input type="number" id="roaBeforeInterest" name="roaBeforeInterest" [(ngModel)]="roaBeforeInterest" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Cash/Current Liability:</span> <input type="number" id="cashCurrentLiability" name="cashCurrentLiability" [(ngModel)]="cashCurrentLiability" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Cash/Total Assets:</span> <input type="number" id="cashTotalAssets" name="cashTotalAssets" [(ngModel)]="cashTotalAssets" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Continuous interest rate (after tax):</span> <input type="number" id="continuousInterestRateAfterTax" name="continuousInterestRateAfterTax" [(ngModel)]="continuousInterestRateAfterTax" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Debt ratio %:</span> <input type="number" id="debtRatioPercent" name="debtRatioPercent" [(ngModel)]="debtRatioPercent" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Working Capital/Equity:</span> <input type="number" id="workingCapitalEquity" name="workingCapitalEquity" [(ngModel)]="workingCapitalEquity" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Total debt/Total net worth:</span> <input type="number" id="totalDebtTotalNetWorth" name="totalDebtTotalNetWorth" [(ngModel)]="totalDebtTotalNetWorth" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Interest Coverage Ratio (Interest expense to EBIT):</span> <input type="number" id="interestCoverageRatio" name="interestCoverageRatio" [(ngModel)]="interestCoverageRatio" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Interest Expense Ratio:</span> <input type="number" id="interestExpenseRatio" name="interestExpenseRatio" [(ngModel)]="interestExpenseRatio" placeholder="Enter the value" min="0" step="0.01"></label>
+                <label><span>Net income to total assets:</span> <input type="number" id="netIncomeToTotalAssets" name="netIncomeToTotalAssets" [(ngModel)]="netIncomeToTotalAssets" placeholder="Enter the value" min="0" step="0.01"></label>
+            </fieldset>
+
+            <button type="button" id="predictButton" (click)="predictBankruptcy()">Predict Now</button>
+
+            <fieldset id="prediction">
+                <label id="predictionLabel"><span>Prediction:</span></label>{{bankruptcyPredictionResult}}
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

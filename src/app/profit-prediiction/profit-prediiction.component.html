@@ -1,0 +1,16 @@
+<div>
+    <h1 id="title">Let's Predict Profit</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <main>
+        <form id="survey-form" #predictionForm="ngForm">
+            <fieldset id="first">
+                <label id="number-label"><span>R&D Spend: </span> <input type="number" name="rAndDSpend" [(ngModel)]="rAndDSpend" placeholder="Type Your R&D spend here"></label>
+                <label id="number-label"><span>Marketing Spend: </span> <input type="number" name="marketingSpend" [(ngModel)]="marketingSpend" placeholder="Type Your Marketing Spend here"></label>
+            </fieldset>
+            <button type="button" id="submit" (click)="makePrediction()">Predict Now</button>
+            <fieldset>
+                <label id="number-label"><span>Your Profit (approx.): </span> <input type="number" name="prediction" [(ngModel)]="prediction" placeholder="" readonly></label>
+            </fieldset>
+        </form>
+    </main>
+</div>

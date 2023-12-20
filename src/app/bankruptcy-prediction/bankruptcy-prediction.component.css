@@ -1,0 +1,66 @@
+/* body{
+    margin:0;
+    font-family:Tahoma;
+    font-size:16px;
+    background-image:url("/assets/bankruptcy.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+} */
+  
+  main{
+    border-radius:10px;
+    width:70%;
+    padding:30px 0 30px 0;
+    margin:auto;
+    background-color:#4682B4;
+  }
+  h1{
+    text-align:center;
+    margin-top:2rem;
+    color:#4682B4;
+    font-weight: 700;
+    
+  }
+  #description{
+    text-align:center;
+    margin-bottom:4rem;
+    color:black;
+  }
+  fieldset{
+    border:none;
+    padding:0 6% 0 6%;
+  }
+  input,textarea,select {
+    padding-left:10px;
+    width: 100%;
+    min-height: 2.5rem;
+    border-radius:4px;
+    border: 0px;
+  }
+  label{
+    color:white;
+    display:block;
+    margin-bottom:1rem;
+  }
+  label p{
+    margin: auto;
+  }
+  .inline{
+    width:unset;
+    margin: 0 0.5em 0 0;
+    vertical-align:middle;
+  }
+  #submit{
+    display:block;
+    margin:1em auto;
+    width:25%;
+    height:45px;
+    border-radius:6px;
+    border:2px solid white;
+    background-color:#255c89;
+    color:white;
+    font-size:18px;
+    font-style:bold;
+  }
