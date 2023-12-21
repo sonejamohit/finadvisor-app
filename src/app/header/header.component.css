@@ -1,7 +1,8 @@
 /* header top */
 .header-top {
     height: 4rem;
-    background-color: #4682B4;
+    background: linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);
+    border-bottom: 4px solid white;
     /* position: fixed;
     top: 0;
     width: 100%; */
@@ -78,17 +79,20 @@
     /* margin: 1rem 0; */ 
     justify-content: space-between;
     
+    
 }
 .btn button{
     width: 5.5rem;
     height: 2.5rem;
     font-size: 18px;
+    font-weight: 200;
     background-color: #fff;
-    color: #4682B4;
+    color: #b46346;
     align-items: center;
     margin: auto 0.5rem;
     padding: 0.5rem 0.8rem;
     border: 0px solid #4682B4;
     border-radius: 7px;
     cursor: pointer;
+    
 }

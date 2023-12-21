@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <div class="first-body">
     <h1 id="title">Let's Predict Bankruptcy</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <main>
@@ -39,10 +39,11 @@
             <button type="button" id="predictButton" (click)="predictBankruptcy()">Predict Now</button>
 
             <fieldset id="prediction">
-                <label id="predictionLabel"><span>Prediction:</span></label>{{bankruptcyPredictionResult}}
+                <label id="predictionLabel"><span>Prediction:</span><input type="number" name="bankruptcy" placeholder="" readonly></label>{{bankruptcyPredictionResult}}
             </fieldset>
         </form>
     </main>
+</div>
 </body>
 
 </html>

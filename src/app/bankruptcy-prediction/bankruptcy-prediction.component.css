@@ -8,25 +8,32 @@
     background-repeat: no-repeat; 
     background-size: cover; 
 } */
-  
+.first-body{
+  background-image: url("/assets/3409297.jpg");
+}
   main{
-    border-radius:10px;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    /* border-radius:10px; */
     width:70%;
     padding:30px 0 30px 0;
     margin:auto;
-    background-color:#4682B4;
+    /* background-color:#4682B4; */
   }
   h1{
     text-align:center;
-    margin-top:2rem;
-    color:#4682B4;
+    padding-top:2rem;
+    color:#fff;
     font-weight: 700;
     
   }
   #description{
     text-align:center;
     margin-bottom:4rem;
-    color:black;
+    color:#fff;
   }
   fieldset{
     border:none;
@@ -52,14 +59,14 @@
     margin: 0 0.5em 0 0;
     vertical-align:middle;
   }
-  #submit{
+  #predictButton{
     display:block;
     margin:1em auto;
     width:25%;
     height:45px;
     border-radius:6px;
     border:2px solid white;
-    background-color:#255c89;
+    background: linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);;
     color:white;
     font-size:18px;
     font-style:bold;

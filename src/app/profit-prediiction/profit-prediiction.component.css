@@ -5,25 +5,38 @@
     font-size:16px;
     background-image:url("https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1939&q=80");
   } */
+  .first-body{
+    background-image: url("/assets/3409297.jpg");
+  }
   main{
-    border-radius:10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    /* border-radius:10px; */
     width:70%;
     padding:30px 0 30px 0;
-    margin:auto;
-    background-color:#4682B4;
+    margin: auto;
+    /* background: linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);; */
+
   }
-  
+  #survey-form{
+    padding-bottom: 2rem;
+  }
   h1{
     text-align:center;
-    margin-top:2rem;
-    color:#4682B4;
+    margin-top: auto;
+    padding: 2rem;
+    color:#fff;
     font-weight: 700;
     
   }
   #description{
     text-align:center;
     margin-bottom: 2rem;
-    color:black;
+    color:#fff;
   }
   fieldset{
     border:none;
@@ -56,7 +69,7 @@
     height:45px;
     border-radius:6px;
     border:2px solid white;
-    background-color: #255c89;
+    background: linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);;
     color:white;
     font-size:18px;
     font-style:bold;

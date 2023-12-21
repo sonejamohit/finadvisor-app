@@ -17,6 +17,10 @@
 } */
 
 /* consultation section */
+.Consultation-text{
+    margin-right: 30px;
+    padding-top: 40px;
+}
 .consultation-item {
     position: relative;
     top: -55px;
@@ -50,21 +54,21 @@
     padding: 12px 10px;
 }
 
-.Consultation-text {
-    margin-top: 30px;
-}
 
 .Consultation-text h5 {
-    color: #4682B4;
-    font-size: 23px;
+    background: -webkit-linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
 }
 
 .Consultation-text h1 {
     font-weight: 700;
+    font-size: 36px;
 }
 
 .Consultation-text p {
-    font-size: 21px;
+    font-size: 20px;
     margin-top: 21px;
 }
 
@@ -125,9 +129,11 @@ portfolio-item p {
     margin-top: 35px;
 }
 
-.left-text h6 {
-    font-size: 22px;
-    color: #4682B4;
+.team-text h5 {
+    font-size: 32px;
+    background: -webkit-linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .left-text h1 {
@@ -141,13 +147,17 @@ portfolio-item p {
 }
 
 .services-item {
-    background-color: #fff;
-    padding: 20px;
+    /* background-color: #fff; */
+    padding: 20px 60px;
     border-radius: 5px;
     position: relative;
     bottom: 30px;
 }
-
+.services-item h4{
+    background: -webkit-linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .left image img {
     width: 66px;
@@ -161,8 +171,12 @@ portfolio-item p {
 
 
 .team-text h6 {
-    font-size: 22px;
-    color: #4682B4;
+    font-size: 32px;
+    /* color: #4682B4; */
+    /* color: linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%); */
+    background: -webkit-linear-gradient(90deg, rgba(255,144,1,1) 0%, rgba(255,86,27,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .team-text h1 {

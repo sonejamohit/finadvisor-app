@@ -1,0 +1,14 @@
+
+.calc-text{
+    font-size: 32px;
+    font-weight: 550;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
